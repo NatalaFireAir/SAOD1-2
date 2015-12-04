@@ -32,6 +32,7 @@ void IntArray::initRand() {
         *p = rand()%100;
         p++;
     }
+    controlSum = 0;
     for (int i = 0; i < size; i++) controlSum += originalArray[i];
 }
 //инициализация последовательными числами
@@ -42,6 +43,7 @@ void IntArray::initSerial() {
         *p = i;
         p++;
     }
+    controlSum = 0;
     for (int i = 0; i < size; i++) controlSum += originalArray[i];
 }
 //вывод массива в консоль
